@@ -20,7 +20,7 @@
 ##############################################################################
 {
     "name": "Account Analytic Purchase Contract",
-    'version': '9.0.0',
+    'version': '9.0.1.0',
     'category': 'Accounting',
     'summary': 'Quotations, Sales Orders, Invoicing',
     'description': """
