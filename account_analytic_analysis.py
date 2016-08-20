@@ -23,8 +23,6 @@ class account_analytic_account(osv.osv):
 
     _columns = {
         'type': fields.selection([('contract', 'Sale Contract'), ('template', 'Template'), ('purchase_contract', 'Purchase Contract')], 'Type'),
-        'description': fields.text('Terms and Conditions'),
-        'partner_id': fields.many2one('res.partner', 'Partner', ondelete='cascade', help="Select a partner which will use analytic account specified in analytic default (e.g. create new customer invoice or Sales order if we select this partner, it will automatically take this as an analytic account)")
     }
 
     def _prepare_invoice_data(self, cr, uid, contract, context=None):
